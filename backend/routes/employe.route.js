@@ -4,7 +4,7 @@ const { employeModel } = require("../model/employ.model");
 
 const {auth}=require("../middleware/auth")
 
-employeerouter.use(auth)
+//employeerouter.use(auth)
 // Create
 employeerouter.post("/add", async (req, res) => {
     const { firstName, lastName, email, department, salary } = req.body;
