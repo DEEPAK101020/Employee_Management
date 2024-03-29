@@ -8,7 +8,7 @@ This API provides endpoints for managing employees, including registration, auth
 
 ### Register
 - **Method:** POST
-- **Endpoint:** users/register
+- **Endpoint:** user/register
 - **Description:** Registers a new user.
 - **Request Body:**
   - name: String
@@ -23,7 +23,7 @@ This API provides endpoints for managing employees, including registration, auth
 
 ### Login
 - **Method:** POST
-- **Endpoint:** /userslogin
+- **Endpoint:** /user/login
 - **Description:** Logs in a user.
 - **Request Body:**
   - email: String
@@ -39,7 +39,7 @@ This API provides endpoints for managing employees, including registration, auth
 
 ### Logout
 - **Method:** GET
-- **Endpoint:** users/logout
+- **Endpoint:** user/logout
 - **Description:** Logs out a user by adding the token to the blacklist.
 - **Request Headers:**
   - Authorization: Bearer <token>
@@ -53,7 +53,7 @@ This API provides endpoints for managing employees, including registration, auth
 
 ### Add Employee
 - **Method:** POST
-- **Endpoint:** emp/add
+- **Endpoint:** employee/add
 - **Description:** Adds a new employee (Admin only).
 - **Request Body:**
   - name: String
@@ -69,7 +69,7 @@ This API provides endpoints for managing employees, including registration, auth
 
 ### Delete Employee
 - **Method:** DELETE
-- **Endpoint:** emp/delete/:id
+- **Endpoint:** employee/delete/:id
 - **Description:** Deletes an employee by ID (Admin only).
 - **Request Parameters:**
   - id: String (Employee ID)
@@ -81,7 +81,7 @@ This API provides endpoints for managing employees, including registration, auth
 
 ### Update Employee
 - **Method:** PATCH
-- **Endpoint:** emp/update/:id
+- **Endpoint:** employee/update/:id
 - **Description:** Updates an employee by ID (Admin only).
 - **Request Parameters:**
   - id: String (Employee ID)
@@ -94,7 +94,7 @@ This API provides endpoints for managing employees, including registration, auth
 
 ### Get All Employees
 - **Method:** GET
-- **Endpoint:** emp/all
+- **Endpoint:** employee/alldata
 - **Description:** Gets all employees with filtering, searching, and pagination (Admin only).
 - **Query Parameters:**
   - page: Number (optional, default: 1)
