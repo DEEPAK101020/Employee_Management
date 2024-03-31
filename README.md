@@ -104,6 +104,12 @@ This API provides endpoints for managing employees, including registration, auth
     - employees: Array (List of employees)
   - 500 Internal Server Error
     - error: "Internal server error"
+
+      
 ##LogIn page
 ![Screenshot (13)](https://github.com/DEEPAK101020/Employee_Management/assets/131662969/e5d02648-4a01-4d67-8f76-0ce1735b927c)
+
+##Dashboard
+
+![Screenshot (14)](https://github.com/DEEPAK101020/Employee_Management/assets/131662969/948c7584-2852-41c5-b5a3-1725f30f4c80)
 
